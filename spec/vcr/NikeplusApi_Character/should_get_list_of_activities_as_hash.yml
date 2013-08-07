@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.nike.com/me/sport/activities?access_token=<TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Appid:
+      - b31990e7-8583-4251-808f-9dc67b40f5d2
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Wed, 07 Aug 2013 14:08:25 GMT
+      Server:
+      - Apache
+      X-Swooshlet:
+      - app-msp-api-0 prd sin-83-app-msp-api-0
+      Content-Length:
+      - '1754'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"data\":[{\"activityId\":\"e1a02c8a-137b-4e52-a8f8-124d5afa3f3b\",\"activityType\":\"ALL_DAY\",\"startTime\":\"2013-04-10T21:00:00Z\",\"activityTimeZone\":\"Europe/Riga\",\"status\":\"IN_PROGRESS\",\"deviceType\":\"FUELBAND\",\"metricSummary\":{\"calories\":132,\"fuel\":378,\"distance\":1.3527531623840332,\"steps\":1718,\"duration\":\"1:22:00.000\"},\"tags\":[],\"metrics\":[]},{\"activityId\":\"c2a7d6fd-492f-4e22-9847-8afa374261b3\",\"activityType\":\"ALL_DAY\",\"startTime\":\"2013-04-09T21:00:00Z\",\"activityTimeZone\":\"Europe/Riga\",\"status\":\"IN_PROGRESS\",\"deviceType\":\"FUELBAND\",\"metricSummary\":{\"calories\":747,\"fuel\":2145,\"distance\":7.343292236328125,\"steps\":9326,\"duration\":\"8:18:00.000\"},\"tags\":[],\"metrics\":[]},{\"activityId\":\"d7841e41-cc59-4272-925a-70c651f597ba\",\"activityType\":\"ALL_DAY\",\"startTime\":\"2013-04-08T21:00:00Z\",\"activityTimeZone\":\"Europe/Riga\",\"status\":\"IN_PROGRESS\",\"deviceType\":\"FUELBAND\",\"metricSummary\":{\"calories\":716,\"fuel\":2065,\"distance\":5.778728485107422,\"steps\":7339,\"duration\":\"9:07:00.000\"},\"tags\":[],\"metrics\":[]},{\"activityId\":\"b50a05cb-805b-463d-8443-a4618151e61e\",\"activityType\":\"ALL_DAY\",\"startTime\":\"2013-04-07T21:00:00Z\",\"activityTimeZone\":\"Europe/Riga\",\"status\":\"IN_PROGRESS\",\"deviceType\":\"FUELBAND\",\"metricSummary\":{\"calories\":963,\"fuel\":2772,\"distance\":8.129904747009277,\"steps\":10325,\"duration\":\"11:03:00.000\"},\"tags\":[],\"metrics\":[]},{\"activityId\":\"8e4bd39b-2d24-42d5-94d5-f3c8114e3245\",\"activityType\":\"ALL_DAY\",\"startTime\":\"2013-04-06T21:00:00Z\",\"activityTimeZone\":\"Europe/Riga\",\"status\":\"IN_PROGRESS\",\"deviceType\":\"FUELBAND\",\"metricSummary\":{\"calories\":389,\"fuel\":1117,\"distance\":3.6944808959960938,\"steps\":4692,\"duration\":\"3:44:00.000\"},\"tags\":[],\"metrics\":[]}],\"paging\":{\"next\":\"/me/sport/activities?access_token=<TOKEN>&offset=6\"}}"
+    http_version: 
+  recorded_at: Wed, 07 Aug 2013 14:08:25 GMT
+recorded_with: VCR 2.5.0

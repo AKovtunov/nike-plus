@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.nike.com/me/sport/activities/e1a02c8a-137b-4e52-a8f8-124d5afa3f3b/gps?access_token=<TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Appid:
+      - b31990e7-8583-4251-808f-9dc67b40f5d2
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Content-Language:
+      - en-US
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Wed, 07 Aug 2013 14:27:57 GMT
+      Server:
+      - Apache
+      X-Swooshlet:
+      - app-msp-api-0 prd sin-83-app-msp-api-0
+      Content-Length:
+      - '81'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"result\":\"failure\",\"errorCode\":\"0x00000003\",\"errorMessage\":\"Activity
+        not found\"}"
+    http_version: 
+  recorded_at: Wed, 07 Aug 2013 14:27:57 GMT
+recorded_with: VCR 2.5.0
